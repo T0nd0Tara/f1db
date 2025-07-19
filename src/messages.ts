@@ -72,7 +72,7 @@ export const sequence: Message[] = [
   { time: 100, type: MessageType.crofty, msg: "Great start from Verstappen as he leads into Turn 1!", relevantDrivers: [Driver.VER] },
   { time: 100, type: MessageType.radio, msg: "Box, box, box this lap. We have a puncture.", relevantDrivers: [Driver.HAM] },
   { time: 100, type: MessageType.raceStatus, msg: "Yellow flag in Sector 1", relevantDrivers: [] },
-  { time: 100, type: MessageType.stewards, msg: "Incident between Car 44 and Car 55 noted. Under investigation.", relevantDrivers: [Driver.HAM, Driver.SAI] },
+  { time: 100, type: MessageType.stewards, msg: `Incident between Car ${Driver.HAM} and Car ${Driver.SAI} noted. Under investigation.`, relevantDrivers: [Driver.HAM, Driver.SAI] },
   { time: 104, type: MessageType.stewards, msg: `No further action between Car ${Driver.STR} and Car (wall)`, relevantDrivers: [Driver.STR] },
 
   { time: 101, type: MessageType.newLap, msg: "#2", relevantDrivers: [] },
@@ -80,7 +80,7 @@ export const sequence: Message[] = [
   { time: 102, type: MessageType.raceStatus, msg: "Green flag. Racing resumes.", relevantDrivers: [] },
   { time: 102, type: MessageType.crofty, msg: "Fastest lap of the race so far by Norris!", relevantDrivers: [Driver.NOR] },
   { time: 103, type: MessageType.radio, msg: "Tyres are overheating, guys. I'm losing grip.", relevantDrivers: [Driver.LEC] },
-  { time: 104, type: MessageType.stewards, msg: "No further action between Car 44 and Car 55.", relevantDrivers: [Driver.HAM, Driver.SAI] },
+  { time: 104, type: MessageType.stewards, msg: `No further action between Car ${Driver.HAM} and Car ${Driver.SAI}.`, relevantDrivers: [Driver.HAM, Driver.SAI] },
 
   { time: 105, type: MessageType.newLap, msg: "#3", relevantDrivers: [Driver.VER] },
   { time: 106, type: MessageType.radio, msg: "Engine temperatures are high. Keep it in mode 7.", relevantDrivers: [Driver.ANT] },
@@ -88,7 +88,7 @@ export const sequence: Message[] = [
 
   { time: 108, type: MessageType.newLap, msg: "#4", relevantDrivers: [Driver.VER, Driver.NOR, Driver.LEC] },
   { time: 109, type: MessageType.radio, msg: "Tell him not to move under braking, it's dangerous!", relevantDrivers: [Driver.RUS] },
-  { time: 109, type: MessageType.stewards, msg: "Car 14 given a warning for weaving under braking.", relevantDrivers: [Driver.ALO] },
+  { time: 109, type: MessageType.stewards, msg: `Car ${Driver.ALO} given a warning for weaving under braking.`, relevantDrivers: [Driver.ALO] },
   { time: 110, type: MessageType.crofty, msg: "Hamilton sets a purple first sector on his recovery drive.", relevantDrivers: [Driver.HAM] },
 
   { time: 111, type: MessageType.newLap, msg: "#5", relevantDrivers: [Driver.VER] },
