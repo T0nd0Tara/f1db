@@ -54,8 +54,8 @@ export interface Message {
 }
 
 export const sequence: Message[] = [
-  { time: 0, type: MessageType.raceStatus, msg: 'Formation Lap', relevantDrivers: [] },
   { time: 0, type: MessageType.newLap, msg: "#0", relevantDrivers: [] },
+  { time: 0, type: MessageType.raceStatus, msg: 'Formation Lap', relevantDrivers: [] },
 
   { time: 1, type: MessageType.crofty, msg: 'is that stroll? already in the wall??', relevantDrivers: [Driver.STR] },
   { time: 10, type: MessageType.radio, msg: "I don't know what happend mate", relevantDrivers: [Driver.STR] },
