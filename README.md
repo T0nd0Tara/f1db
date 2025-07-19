@@ -53,3 +53,7 @@ on lap #1 -> print _radio_ messages as well as _crofty_ messages<BR>
 on lap #2 -> print _radio_ messages, _crofty_ messages, and _race status_ messages<BR>
 and so on...<BR>
 </details>
+<details>
+<summary>Q6</summary>
+Print the lap number where Alonso (car #14) is firstly mentioned
+</details>
