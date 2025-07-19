@@ -34,6 +34,7 @@ more data
 you are allowed to print to the console stuff)
 <details>
 <summary>Q1</summary>
+
 Print every _radio_ message you get
 </details>
 <details>
@@ -46,11 +47,13 @@ Print every message where stroll (car #18) is relevant
 </details>
 <details>
 <summary>Q4</summary>
-Rotate between the type messages each new lap, in the order (RADIO, CROFTY, RACE_STATUS, STEWARDS)
+
+Rotate between the type messages each new lap, in the order (_RADIO_, _CROFTY_, _RACE_STATUS_, _STEWARDS_)
 </details>
 <details>
 <summary>Q5</summary>
-Every new lap, print the next log type, but keep printing old log types, in the order (RADIO, CROFTY, RACE_STATUS, STEWARDS).
+
+Every new lap, print the next log type, but keep printing old log types, in the order (_RADIO_, _CROFTY_, _RACE_STATUS_, _STEWARDS_).
 
 i.e. <BR>
 on lap #0 -> print only _radio_ messages <BR>
