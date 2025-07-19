@@ -100,7 +100,7 @@ export const sequence: Message[] = [
 
   { time: 117, type: MessageType.newLap, msg: "#7", relevantDrivers: [Driver.VER, Driver.NOR] },
   { time: 118, type: MessageType.radio, msg: "I have no grip anymore, box for new tyres.", relevantDrivers: [Driver.SAI] },
-  { time: 119, type: MessageType.stewards, msg: "Track limits violation by Car 55. Black-and-white flag shown.", relevantDrivers: [Driver.SAI] },
+  { time: 119, type: MessageType.stewards, msg: `Track limits violation by Car ${Driver.SAI}. Black-and-white flag shown.`, relevantDrivers: [Driver.SAI] },
 
   { time: 120, type: MessageType.newLap, msg: "#8", relevantDrivers: [] },
   { time: 120, type: MessageType.raceStatus, msg: "Light drizzle reported in Sector 3.", relevantDrivers: [] },
