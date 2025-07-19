@@ -82,7 +82,7 @@ export const sequence: Message[] = [
   { time: 103, type: MessageType.radio, msg: "Tyres are overheating, guys. I'm losing grip.", relevantDrivers: [Driver.LEC] },
   { time: 104, type: MessageType.stewards, msg: `No further action between Car ${Driver.HAM} and Car ${Driver.SAI}.`, relevantDrivers: [Driver.HAM, Driver.SAI] },
 
-  { time: 105, type: MessageType.newLap, msg: "#3", relevantDrivers: [Driver.VER] },
+  { time: 105, type: MessageType.newLap, msg: "#3", relevantDrivers: [] },
   { time: 106, type: MessageType.radio, msg: "Engine temperatures are high. Keep it in mode 7.", relevantDrivers: [Driver.ANT] },
   { time: 107, type: MessageType.crofty, msg: "Alonso making a move on Russell for P5 — what a battle!", relevantDrivers: [Driver.ALO, Driver.RUS] },
 
