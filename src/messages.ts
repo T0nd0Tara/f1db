@@ -172,6 +172,6 @@ export const sequence: Message[] = [
   { time: 301, type: MessageType.radio, msg: "Yeah… tough one today guys, car just wasn’t there at the end.", relevantDrivers: [Driver.VER] },
   { time: 305, type: MessageType.raceStatus, msg: "Podium ceremony: P1 Norris, P2 Hamilton, P3 Verstappen.", relevantDrivers: [Driver.NOR, Driver.HAM, Driver.VER] },
   { time: 307, type: MessageType.crofty, msg: "And listen to that crowd! A British 1-2 here at Silverstone. Absolutely magical scenes.", relevantDrivers: [Driver.NOR, Driver.HAM] },
-  { time: 310, type: MessageType.radio, msg: "Congrats Lando, you deserve this one mate. Great race.", relevantDrivers: [Driver.HAM, Driver.NOR] },
+  { time: 310, type: MessageType.radio, msg: "Congrats Lando, you deserve this one mate. Great race.", relevantDrivers: [Driver.NOR] },
   { time: 315, type: MessageType.raceStatus, msg: "Race officially classified. Full results to follow.", relevantDrivers: [] }
 ]
