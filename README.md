@@ -6,10 +6,15 @@ An RxJS learning exercise that uses sockets for data
    needed.<BR>By using sockets, we assure the data gets in a STREAM, and we never know how many more messages we will
 get
 2. OrelDB confuses the students with very complex unnecessary pipes
-3. Formula 1 is cooler
+3. Formula 1 is cooler, and it's logical to use with sockets as we can imitate a live race.
 
 ## API
-You can ask the connection string from your tutor.
+When connecting to the server, The race immediately starts, You will get the events LIVE as things happen.
+After it ends you will be disconnected from the server, to start another race, just reconnect.
+<BR>
+This is a short race (about 3 seconds)
+<BR>
+You can ask for the connection string from your tutor.
 ### events
 - `RADIO` 
 - `CROFTY`
@@ -29,7 +34,7 @@ more data
 you are allowed to print to the console stuff)
 <details>
 <summary>Q1</summary>
-Print every radio message you get
+Print every _radio_ message you get
 </details>
 <details>
 <summary>Q2</summary>
