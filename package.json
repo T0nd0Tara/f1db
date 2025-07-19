@@ -17,12 +17,13 @@
     "url": "https://github.com/T0nd0Tara/f1db/issues"
   },
   "homepage": "https://github.com/T0nd0Tara/f1db#readme",
-  "devDependencies": {
-    "@types/node": "^24.0.15",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
-  },
   "dependencies": {
     "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "@types/socket.io": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }

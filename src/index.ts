@@ -1,5 +1,14 @@
-const io = require('socket.io')();
-io.on('connection', (client: any) => {
-  console.log('client connected')
+import { Server, Socket } from 'socket.io'
+
+const port = 3000
+console.log(`listening on port ${port}`)
+const io = new Server(port, {
+  cors: {
+    origin: '*',
+  }
 });
-io.listen(3000);
+io.on('connection', (client: Socket) => {
+  client.emit("message", "hello my man")
+});
+
+
