@@ -190,4 +190,4 @@ export const sequence: Message[] = [
   { time: 307, type: MessageType.crofty, msg: "And listen to that crowd! A British 1-2 here at Silverstone. Absolutely magical scenes.", relevantDrivers: [Driver.NOR, Driver.HAM] },
   { time: 310, type: MessageType.radio, msg: "Congrats Lando, you deserve this one mate. Great race.", relevantDrivers: [Driver.NOR] },
   { time: 315, type: MessageType.raceStatus, msg: "Race officially classified. Full results to follow.", relevantDrivers: [] }
-]
+].sort((a, b) => a.time - b.time)
