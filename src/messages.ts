@@ -14,6 +14,7 @@ export enum Driver {
   // ASTON
   ALO = 14,
   STR = 18,
+
   // FERRARI
   LEC = 16,
   HAM = 44,
@@ -109,6 +110,7 @@ export const sequence: Message[] = [
 
   { time: 124, type: MessageType.newLap, msg: "#9", relevantDrivers: [] },
   { time: 124, type: MessageType.raceStatus, msg: "Norris now leads Verstappen by 0.8s.", relevantDrivers: [Driver.NOR, Driver.VER] },
+  { time: 125, type: MessageType.crofty, msg: "Is that glock? Is that glock going slowly?", relevantDrivers: [] },
   { time: 126, type: MessageType.radio, msg: "Intermediates ready in the box.", relevantDrivers: [Driver.ANT] },
 
   { time: 128, type: MessageType.newLap, msg: "#10", relevantDrivers: [] },
@@ -141,6 +143,10 @@ export const sequence: Message[] = [
   { time: 149, type: MessageType.raceStatus, msg: "Verstappen leads by 4.8s, Norris P2, Leclerc P3.", relevantDrivers: [Driver.VER, Driver.NOR, Driver.LEC] },
   { time: 152, type: MessageType.radio, msg: "Lando, we’re switching to Plan C, target +2.", relevantDrivers: [Driver.NOR] },
 
+  { time: 178, type: MessageType.newLap, msg: "#20", relevantDrivers: [] },
+  { time: 180, type: MessageType.stewards, msg: `+10 second penalty for Ocon (${Driver.OCO})`, relevantDrivers: [Driver.OCO] },
+  { time: 185, type: MessageType.radio, msg: "Huh?", relevantDrivers: [Driver.OCO] },
+
   { time: 205, type: MessageType.newLap, msg: "#25", relevantDrivers: [] },
   { time: 205, type: MessageType.raceStatus, msg: "Mid-race pit stops cycling through. Verstappen retains lead.", relevantDrivers: [Driver.VER] },
   { time: 207, type: MessageType.radio, msg: "Car feels good now, tyres are working.", relevantDrivers: [Driver.HAM] },
@@ -150,10 +156,19 @@ export const sequence: Message[] = [
   { time: 220, type: MessageType.raceStatus, msg: "Verstappen still leads, but Norris closing the gap slightly.", relevantDrivers: [Driver.VER, Driver.NOR] },
   { time: 225, type: MessageType.radio, msg: "We see a small chance of rain in 5 minutes. Stay out.", relevantDrivers: [Driver.VER] },
 
+  { time: 220, type: MessageType.newLap, msg: "#37", relevantDrivers: [] },
+  { time: 224, type: MessageType.stewards, msg: `+10 second penalty for Ocon (${Driver.OCO})`, relevantDrivers: [Driver.OCO] },
+  { time: 224, type: MessageType.radio, msg: "What did I even do??", relevantDrivers: [Driver.OCO] },
+
   { time: 235, type: MessageType.newLap, msg: "#42", relevantDrivers: [] },
   { time: 235, type: MessageType.raceStatus, msg: "Rain begins lightly in Sector 2. Norris just 1.1s behind Verstappen.", relevantDrivers: [Driver.NOR, Driver.VER] },
   { time: 237, type: MessageType.crofty, msg: "Here comes Norris! Right on Verstappen’s tail now, what a fight we have!", relevantDrivers: [Driver.NOR, Driver.VER] },
   { time: 240, type: MessageType.radio, msg: "You’re doing great Lando, keep the pressure.", relevantDrivers: [Driver.NOR] },
+
+  { time: 241, type: MessageType.newLap, msg: "#45", relevantDrivers: [] },
+  { time: 242, type: MessageType.stewards, msg: `+10 second penalty for Ocon (${Driver.OCO})`, relevantDrivers: [Driver.OCO] },
+  { time: 243, type: MessageType.radio, msg: "WHAT THE $#%*!", relevantDrivers: [Driver.OCO] },
+  { time: 243, type: MessageType.crofty, msg: "There goes 50k down ocon's wallet. This is really not his day...", relevantDrivers: [Driver.OCO] },
 
   { time: 244, type: MessageType.newLap, msg: "#47", relevantDrivers: [] },
   { time: 244, type: MessageType.raceStatus, msg: "Norris takes the lead into Brooklands! The crowd goes wild!", relevantDrivers: [Driver.NOR, Driver.VER] },
@@ -165,7 +180,8 @@ export const sequence: Message[] = [
   { time: 254, type: MessageType.radio, msg: "Let’s go get him! Hammer time!", relevantDrivers: [Driver.HAM] },
 
   { time: 256, type: MessageType.newLap, msg: "#51", relevantDrivers: [] },
-  { time: 256, type: MessageType.crofty, msg: "Final lap! Norris leads, Hamilton overtakes Verstappen for P2!", relevantDrivers: [Driver.NOR, Driver.HAM, Driver.VER] },
+  { time: 256, type: MessageType.crofty, msg: "Final lap! Norris leads, Hamilton is side by side with Verstappen for P2!", relevantDrivers: [Driver.NOR, Driver.HAM, Driver.VER] },
+  { time: 257, type: MessageType.crofty, msg: "Through goes Hamilton!", relevantDrivers: [Driver.HAM] },
   { time: 258, type: MessageType.raceStatus, msg: "Chequered flag! Lando Norris wins at Silverstone! Hamilton P2, Verstappen P3!", relevantDrivers: [Driver.NOR, Driver.HAM, Driver.VER] },
   { time: 259, type: MessageType.radio, msg: "YES! YES! Thank you so much everyone, what a car! We did it!", relevantDrivers: [Driver.NOR] },
   { time: 300, type: MessageType.radio, msg: "Well done Lewis, amazing recovery today. P2.", relevantDrivers: [Driver.HAM] },
