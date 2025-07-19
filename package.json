@@ -1,0 +1,24 @@
+{
+  "name": "f1db",
+  "version": "1.0.0",
+  "description": "An rxjs learning exercise that uses sockets for data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T0nd0Tara/f1db.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T0nd0Tara/f1db/issues"
+  },
+  "homepage": "https://github.com/T0nd0Tara/f1db#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "typescript": "^5.8.3"
+  }
+}
