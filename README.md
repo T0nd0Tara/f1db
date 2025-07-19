@@ -10,7 +10,7 @@ get
 
 ## Exercise
 <details>
-  <summery>Questions</summery>
+<summery>Questions</summery>
   
   #### 1
 </details>
